@@ -1,1 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,500&display=swap');
 
+// COLORS
+$violet: hsl(257, 40%, 49%);
+$sofMagenta: hsl(300, 69%, 71%);
+$white: #fff;
+
+// FONT
+$pryFont: 'Open Sans', sans-serif;
+$secFont: 'Poppins', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: $pryFont;
+  line-height: 1.5;
+  background-color: $violet;
+  color: $white;
+}
+
+.container {
+  padding: 2rem;
+}
+
+// HEADER SECTION
+.header {
+  height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+
+  .logo {
+    img {
+      width: 118px;
+    }
+  }
+
+  .content {
+    padding-top: 5rem;
+  }
+
+  .text {
+    margin-top: 6rem;
+    text-align: center;
+    h1 {
+      font-family: $secFont;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .cta {
+    background-color: $white;
+    color: $violet;
+    padding: 0.7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $sofMagenta;
+      color: $white;
+    }
+  }
+
+  .social-links {
+    margin-top: 4rem;
+    text-align: center;
+
+    a {
+      margin-right: 0.5rem;
+
+      &:hover i {
+        border-color: $sofMagenta;
+        color: $sofMagenta;
+      }
+    }
+
+    i {
+      color: $white;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+  }
+}
