@@ -36,11 +36,13 @@ body {
 
 .container {
   padding: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 // HEADER SECTION
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -49,6 +51,7 @@ body {
   .logo {
     img {
       width: 118px;
+      object-fit: contain;
     }
   }
 
@@ -71,7 +74,7 @@ body {
     color: $violet;
     padding: 0.7rem 4rem;
     border-radius: 5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
     transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 
@@ -102,6 +105,44 @@ body {
       border: 1px solid $white;
       border-radius: 50%;
       transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+  }
+}
+
+// MEDIA QUERY
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .header {
+    height: 0px;
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .logo {
+      img {
+        width: 130px;
+      }
+    }
+
+    .text {
+      margin-top: 0;
+      text-align: left;
+      max-width: 500px;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .social-links {
+      margin-top: -3rem;
+      grid-column: 2/3;
+      justify-self: flex-end;
     }
   }
 }
