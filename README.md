@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Huddle landing page](https://github.com/dev-lawrence/fylo-landing-page.git)
-- Live Site URL: [Huddle landing page](https://floy-landing-page.netlify.app/)
+- Solution URL: [Huddle landing page](https://github.com/dev-lawrence/huddle-landing-page.git)
+- Live Site URL: [Huddle landing page](https://huddles-landing-page.netlify.app/)
 
 ## My process
 
